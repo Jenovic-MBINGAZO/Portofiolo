@@ -1,0 +1,637 @@
+body{
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Titillium Web" , sans-serif;  
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+/* -- Home page -- */
+.header{
+    width: 100%;
+    height: 8%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*box-shadow: black 0px 0 5px;*/
+}
+.header .logo{
+    margin-left: 5rem;
+    padding: 1rem;
+    font-size: 1.3rem; 
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+}
+.header .logo a{
+    text-decoration: none;
+    color: black;
+}
+.header .nav{
+    width: 20%;
+    margin-right: 5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .header .nav a{
+
+    text-decoration: none;
+    padding-left: 1rem;
+    font-size: 1.2rem; 
+    color: black;
+    font-family: "Titillium Web" , sans-serif;  
+
+ }
+ #accueil{
+  
+    padding-right: 1rem;
+  
+ }
+ #cv{
+    border-right: 1px solid black;
+    padding-right: 1rem;
+    /*border-left: 1px solid black;*/
+ }
+ #projet{
+    border-right: 1px solid black;
+    padding-right: 1rem;
+ }
+.main{
+    width: 100%;
+    height: 77%;
+    /*background-color:red;*/
+    display: flex;
+    align-items: center;
+}
+.main .element{
+    width: 30%;
+    height: 80%;
+    /*background-color: red;*/
+    margin-left: 15%;
+    font-size: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3%;
+}
+.main .element img{
+    width: 65%;
+    height: 60%;
+    border-radius: 100%;
+    /*box-shadow: 0 0 5px black;*/
+    /*border: 1px solid orange;*/
+}
+.element-1 a{
+    text-decoration: none;
+    color: black;
+}
+.element-2 a{
+    text-decoration: none;
+    color: black;
+}
+.main .element-2{
+    width: 40%;
+    height: 40%;
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.element-2 .content-1{
+    width: 100%;
+    height: 70%;
+    /*background-color: red;*/
+}
+
+#paragraphe{
+    /*background-color: orange;*/
+    width: 55%;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    color: black;
+    /*text-align: center;*/
+}
+#paragraphe-2{
+    /*background-color: black;*/
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 1rem;
+    
+}
+#presentation{
+    margin: 0;
+    width: 55%;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.element-2 .content-2{
+    width: 100%;
+    height: 30%;
+    /*background-color: red;*/
+    display: flex;
+}
+.content-2 .rond-1{
+    width: 10%;
+    height: 90%;
+    border-radius: 100%;
+    background-color: orange;
+    margin-right: 1.5rem;
+}
+.content-2 .rond-2{
+    width: 10%;
+    height: 90%;
+    border-radius: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.content-2 .rond-3{
+    width: 10%;
+    height: 90%;
+    border-radius: 100%;
+    background-color: rgb(97, 97, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-2 .rond-1 a{
+    color: white;
+}
+.content-2 .rond-2 a{
+    color: white;
+}
+.content-2 .rond-3 a{
+    color: white;
+}
+.content-2 .rond-1 a,.content-2 .rond-2 a,.content-2 .rond-3 a{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    /*color: white;*/
+    font-weight: bold;
+}
+.footer{
+    height: 15%;
+    width: 74%;
+    margin-left: 13%;
+    font-family: "Titillium Web" , sans-serif;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: red;*/
+    border-top: 1px solid rgb(212, 208, 208);
+}
+.footer .element-1{
+    width: 15%;
+    height: 70%;
+    /*background-color: yellow;*/
+    margin-right: 2%;
+}
+.footer .element-2{
+   /*width: 15%;*/
+    height: 70%;
+    /*background-color: yellow;*/
+    margin-right: 2%;
+}
+.footer .element-3{
+    width: 30%;
+    height: 70%;
+    /*background-color: yellow;*/
+    margin-right: 2%;
+}
+.footer .element-4{
+ 
+    height: 70%;
+    /*background-color: yellow;*/
+}
+.border{
+    width: 70%;
+    border-top: 1px solid black;
+}
+.element-1 #element-a,.element-2 #element-b,.element-3 #element-c{
+    font-weight: bold;
+}
+.element-1 .element,.element-2 .element,.element-4 #element-d,.element-3 #element-c{
+    margin: 0;
+}
+.element-3 #element-c{
+    text-align: center;
+}
+.bloc-element{
+    width: 100%;
+    height: 50%;
+    /*background-color: red;*/
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+/* --------------------Page cv ----------------------*/
+.main-cv{
+    /*background-color: orange;*/
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 3rem;
+}
+.main-cv p{
+    font-size: 1.2rem;
+}
+.main-cv h1{
+    font-family: "Roboto",sans-serif;
+    
+}
+#h2{
+    margin-top: 5rem;
+    padding-bottom: 1.5rem;
+    /*color: red;*/
+    /*background-color: blue;*/
+}
+#profil{
+    /*background-color: red;*/
+}
+#profil h1{
+    margin: 0;
+    /*background-color: yellow;*/
+}
+#profil p{
+    margin: 0;
+    margin-top: 3rem;
+    /*background-color: greenyellow;*/
+    margin-bottom: 3rem;
+}
+#experience #dev{
+    margin: 0;
+    margin-top: 1.5rem;
+}
+#experience #cyber{
+   padding-bottom: 3rem;
+}
+#experience h1{
+    margin: 0;
+    margin-top: 3rem;
+}
+#experience p{
+    margin: 0;
+    margin-top: 1rem;
+}
+#education h1{
+    margin: 0;
+    margin-top: 3rem;
+}
+#education ul{
+    margin: 0;
+    margin-top: 1rem;
+    /*background-color: white;*/
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+#ecole{
+    padding-bottom: 3rem;
+}
+#competence h1{
+    margin: 0;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+#comp{
+    padding-bottom: 3rem;
+}
+#competence ul{
+    margin: 0;
+    margin-top: 1rem;
+    /*background-color: white;*/
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+#langue{
+   /*background-color: rebeccapurple;*/
+    padding-bottom: 1.5rem;
+}
+#langue h1{
+    margin: 0;
+    margin-top: 3rem;
+}
+#langue ul{
+    margin: 0;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    
+
+}
+/* --------- Page contact --------------*/
+.main-contact{
+    width: 100%;
+    height: 60vh;
+    /*margin-left: 10%;*/
+    /*background-color: orange;*/
+    display: flex;
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    margin-top: 3rem;
+}
+.lien{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+#info{
+    width: 25%;
+    /*background-color: yellow;*/
+    /*padding: 5rem;*/
+    margin-left: 20%;
+    margin-top: 10vh;
+}
+#info p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Titillium Web" , sans-serif;  
+}
+#form{
+    width: 50%;
+    margin-top: 10vh;
+    padding-top: 1rem;
+}
+label{
+    font-size: 1.2rem;
+}
+.conteneur1{
+    display: flex;
+    width: 70%;
+
+}
+.conteneur1 .element1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 5rem;
+}
+.conteneur1 .element1 input{
+    padding: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.conteneur1 .element2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.conteneur1 .element2 input{
+    padding: 1rem;
+    width: 50%;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+.conteneur2{
+    display: flex;
+    width: 70%;
+
+}
+.conteneur2 .element3{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* background-color: forestgreen;*/
+    padding-right: 5rem;
+    margin-top: 0.5rem;
+
+}
+.conteneur2 .element3 input{
+    padding: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.conteneur2 .element4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width: 30%;
+}
+.conteneur2 .element4 input{
+    padding: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.conteneur3{
+    display: flex;
+    margin-top: 0.5rem;
+    width: 70%;
+}
+.conteneur3 .element4{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  
+  
+}
+.conteneur3 .element5{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2.5rem;
+   
+}
+.conteneur3 .element5 textarea{
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+.conteneur3 button{
+    width: 19%;
+    height: 13vh;
+    margin-top: 2.7rem;
+    border-radius: 100%;
+    border: 1px solid orange;
+    background-color: orange;
+    font-weight: bold;
+    color: black;
+}
+/* --- Page projets --- */
+.main-projet{
+    display: flex;
+    width:70%;
+    height: 80vh;
+    /*background-color: red;*/
+    flex-direction: column;
+    /*background-color: saddlebrown;*/
+    margin-left: 15%;
+}
+#projet-1{
+    display: flex;
+    width: 100%;
+   
+}
+#projet-1 #elementaa{
+    width: 50%;
+    height: 30vh;
+    /*background-color: yellow;*/
+}
+#projet-1 #elementbb{
+    width: 40%;
+    height: 30vh;
+    background-color: rgb(224, 225, 224);
+    padding-top: 1em;
+    padding-bottom: 1rem;
+  
+}
+#projet-2{
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+}
+#projet-2 #elementa{
+    width: 50%;
+    height: 30vh;
+    /*background-color:white;*/
+}
+#projet-2 #elementb{
+    width: 40%;
+    height: 30vh;
+    background-color: rgb(224, 225, 224);
+    padding-top: 1em;
+    padding-bottom: 1rem;
+    
+}
+.groupe-texte{
+    width: 50%;
+}
+.projet-img{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+  
+}
+/*Responsive design*/
+/*si la taille de l'ecran est inferieure a 1990px*/
+@media screen and (max-width: 1999px){
+.main{
+    width: 100%;
+    height: 77%;
+}
+.main .element{
+    width: 30%;
+    height: 80%;
+    /*background-color: red;*/
+    margin-left: 15%;
+    font-size: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1%;
+}
+.main .element-2{
+    width: 40%;
+    height: 40%;
+    /*background-color: yellow;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+}
+.main .element img{
+    width: 65%;
+    height: 60%;
+    
+}
+.element-2 .content-1{
+    width: 90%;
+    height: 70%;
+    /*background-color: red;*/
+    margin-left: 5%;
+}
+.element-2 .content-2{
+    width: 90%;
+    height: 70%;
+    /*background-color: black;*/
+    margin-left: 5%;
+    padding-top: 5%;
+   
+}
+.content-2 .rond-1{
+    width: 13%;
+    height: 90%;
+}
+.content-2 .rond-2{
+    width: 13%;
+    height: 90%;
+}
+.content-2 .rond-3{
+    width: 13%;
+    height: 90%;
+}
+}
+/*si la taille de l'ecran est inferieure a 1977px*/
+@media screen and (max-width: 1977px){
+    .content-2 .rond-1{
+        width: 10%;
+        height: 90%;
+    }
+    .content-2 .rond-2{
+        width: 10%;
+        height: 90%;
+    }
+    .content-2 .rond-3{
+        width: 10%;
+        height: 90%;
+    }
+}
+/*si la taille de l'ecran est inferieure a 1790px*/
+@media screen and (max-width: 1790px){
+    .main .element img{
+        width:95%;
+        height: 72%;
+        
+    }
+    .content-2 .rond-1{
+        width: 10%;
+        height: 80%;
+    }
+    .content-2 .rond-2{
+        width: 10%;
+        height: 80%;
+    }
+    .content-2 .rond-3{
+        width: 10%;
+        height: 80%;
+    }
+}
+/*si la taille de l'ecran est inferieure a 1615px*/
+@media screen and (max-width: 1615px){
+    .content-2 .rond-1{
+        width: 15%;
+        height: 95%;
+    }
+    .content-2 .rond-2{
+        width: 15%;
+        height: 95%;
+    }
+    .content-2 .rond-3{
+        width: 15%;
+        height: 95%;
+    }
+}
+
+/*si la taille de l'ecran est inferieure a 1490px*/
+@media screen and (max-width: 1490px){
+
+    .main .element img{
+        width:100%;
+        height: 65%;
+        
+    }
+  
+}
+
+
