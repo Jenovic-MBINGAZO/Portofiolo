@@ -76,13 +76,14 @@ p{
     /*background-color:red;*/
     display: flex;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .main__element--property{
     width: 30%;
     height: 80%;
     /*background-color: red;*/
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 9rem;
     display: flex;
     align-items: center;
@@ -119,6 +120,7 @@ p{
     width: 100%;
     height: 70%;
     /*background-color: red;*/
+    padding-top: 2rem;
 }
 
 .main__text{
@@ -149,19 +151,28 @@ p{
 }
 
 .main__element--size{
-    width: 100%;
+    width: 60%;
     height: 30%;
     /*background-color: red;*/
     display: flex;
+    /*margin-bottom: ;*/
 }
 .main__div--rounded{
-    width: 10%;
-    height: 90%;
+    /*width: 20%;
+    height: 100%;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1.5rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: auto;
+    width: 20%;
     margin-right: 1.5rem;
+    padding: auto;
 }
 .main__color--orange{
     background-color: orange;
@@ -202,29 +213,18 @@ p{
     align-items: center;
     /*background-color: red;*/
     border-top: 1px solid rgb(212, 208, 208);
-}
-.footer__element{
-    width: 15%;
+}.footer__element{
+    width: 20%;
     height: 70%;
     /*background-color: yellow;*/
     margin-right: 2%;
 }
-.footer__element2{
-   /*width: 15%;*/
-    height: 70%;
-    /*background-color: yellow;*/
-    margin-right: 2%;
+.footer__link--decoration{
+    text-decoration: none;
+    color: black;
 }
-.footer__element3{
-    width: 30%;
-    height: 70%;
-    /*background-color: yellow;*/
-    margin-right: 2%;
-}
-.footer .element-4{
- 
-    height: 70%;
-    /*background-color: yellow;*/
+.footer__link--decoration:hover{
+    color: orange;
 }
 .footer__contact{
     width: 100%;
@@ -234,8 +234,12 @@ p{
     display: flex;
     /*justify-content: center;*/
     gap: 1rem;
-    background-color: red;
+    /*background-color: red;*/
 }
+.footer__contact--hover:hover{
+    opacity: 0.5;
+}
+/*
 .element-1 a{
     text-decoration: none;
     color: black;
@@ -253,7 +257,7 @@ p{
 .element-3 #element-c{
     text-align: center;
 }
-
+*/
 /* --------------------Page cv ----------------------*/
 .main-cv{
     /*background-color: orange;*/
@@ -527,124 +531,20 @@ label{
     margin-left: 5%;
   
 }
-/*Responsive design*/
-/*si la taille de l'ecran est inferieure a 1990px*/
-@media screen and (max-width: 1999px){
-.main{
-    width: 100%;
-    height: 77%;
-}
-.main .element{
-    width: 30%;
-    height: 80%;
-    /*background-color: red;*/
-    margin-left: 15%;
-    font-size: 9rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 1%;
-}
-.main .element-2{
-    width: 40%;
-    height: 40%;
-    /*background-color: yellow;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-}
-.main .element img{
-    width: 65%;
-    height: 60%;
-    
-}
-.element-2 .content-1{
-    width: 90%;
-    height: 70%;
-    /*background-color: red;*/
-    margin-left: 5%;
-}
-.element-2 .content-2{
-    width: 90%;
-    height: 70%;
-    /*background-color: black;*/
-    margin-left: 5%;
-    padding-top: 5%;
-   
-}
-.content-2 .rond-1{
-    width: 13%;
-    height: 90%;
-}
-.content-2 .rond-2{
-    width: 13%;
-    height: 90%;
-}
-.content-2 .rond-3{
-    width: 13%;
-    height: 90%;
-}
-}
-/*si la taille de l'ecran est inferieure a 1977px*/
-@media screen and (max-width: 1977px){
-    .content-2 .rond-1{
-        width: 10%;
-        height: 90%;
+/* ------- responsive ----- */
+@media screen and (max-width : 1366px) {
+    /* ----  Main -------*/
+    .main__element-img{
+        width: 100%;
     }
-    .content-2 .rond-2{
-        width: 10%;
-        height: 90%;
+    .main__element{
+        height: 70%;
     }
-    .content-2 .rond-3{
-        width: 10%;
-        height: 90%;
-    }
-}
-/*si la taille de l'ecran est inferieure a 1790px*/
-@media screen and (max-width: 1790px){
-    .main .element img{
-        width:95%;
-        height: 72%;
-        
-    }
-    .content-2 .rond-1{
-        width: 10%;
-        height: 80%;
-    }
-    .content-2 .rond-2{
-        width: 10%;
-        height: 80%;
-    }
-    .content-2 .rond-3{
-        width: 10%;
-        height: 80%;
-    }
-}
-/*si la taille de l'ecran est inferieure a 1615px*/
-@media screen and (max-width: 1615px){
-    .content-2 .rond-1{
-        width: 15%;
-        height: 95%;
-    }
-    .content-2 .rond-2{
-        width: 15%;
-        height: 95%;
-    }
-    .content-2 .rond-3{
-        width: 15%;
-        height: 95%;
+    .main__div--rounded{
+        /*background-color: red;*/
+        margin-top: 2rem;
     }
 }
 
-/*si la taille de l'ecran est inferieure a 1490px*/
-@media screen and (max-width: 1490px){
-
-    .main .element img{
-        width:100%;
-        height: 65%;
-        
-    }
-  
-}
 
 
