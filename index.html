@@ -13,50 +13,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="header">
-        <p class="logo">
-            <a href="index.html">Jenovic MBINGAZO</a>
+        <p class="header__logo">
+            <a href="index.html" class="header__link--text">Jenovic MBINGAZO</a>
         </p>
-        <nav class="nav">
-            <a href="cv.html" id="cv">CV</a>
-            <a href="projet.html" id="projet">Projets</a>
-            <a href="contact.html">Contact</a>
+        <nav class="header__nav">
+            <a href="cv.html"  class="header__link--text header__link-property header__link--border header__link--hover">CV</a>
+            <a href="projet.html"  class="header__link--text header__link--border  header__link--hover">Projets</a>
+            <a href="contact.html" class="header__link--text header__link--px  header__link--active">Contact</a>
         </nav>
     </header>
+
     <main class="main">
-        <div class="element">
-            <img src="images/PP_USA.jpg" alt="Image jenovic">
+        <div class="main__element--property">
+            <img src="images/PP_USA.jpg" alt="Image jenovic" class="main__element-img main__element-img--rounded">
         </div>
-        <div class="element-2">
-            <div class="content-1">
-                <p id="paragraphe">Hello !</p>
-                <p id="paragraphe-2">A propos de moi</p>
-                <p id="presentation">Je suis <strong>Jenovic MBINGAZO</strong>, un développeur web passionné doté d'une créativité et  d'un talent pour concrétiser des idées  en expériences numériques interactives. </p>
+        <div class="main__element">
+            <div class="main__element-p">
+                <p class="main__text">Hello !</p>
+                <p class="main__text--property">A propos de moi</p>
+                <p class="main__text-p">Je suis <strong>Jenovic MBINGAZO</strong>, un développeur web passionné doté d'une créativité et  d'un talent pour concrétiser des idées  en expériences numériques interactives. </p>
             </div>
-            <div class="content-2">
-                <div class="rond-1"> <a href="cv.html">CV</a></div>
-                <div class="rond-2"><a href="projet.html">Projet</a></div>
-                <div class="rond-3"><a href="contact.html">Contacct</a></div>
+            <div class="main__element--size">
+                <div class="main__div--rounded main__color--orange"> <a href="cv.html" class="header__link--td">CV</a></div>
+                <div class="main__div--rounded main__color--red"><a href="projet.html" class="header__link--td">Projet</a></div>
+                <div class="main__div--rounded main__color--primary"><a href="contact.html" class="header__link--td">Contacct</a></div>
             </div>
         </div>
     </main>
+
     <footer class="footer">
        
-        <div class="element-1">
+        <div class="footer__element1">
             <p class="element" id="element-a">Télephone</p>
             <a href="tel:+243811728617" class="element" target="_blank">+ 243 811 728 617</a>
         </div>
 
-        <div class="element-2">
+        <div class="footer__element2">
             <p class="element" id="element-b">Email</p>
             <a href="mailto:djodjombingazo951@gmail.com" target="_blank">djodjombingazo951@gmail.com</a>
         </div>
 
-        <div class="element-3">
+        <div class="footer__element3">
             <p class="element" id="element-c">Suivez-moi</p>
-            <div class="bloc-element">
+            <div class="footer__contact">
                 <div class="element-x1">
-                    <a href="https://www.instagram.com/jenovicnzengu/" target="_blank">
+                    <a href="https://www.instagram.com/jenovicnzengu/" target="_blank" class="footer__element--td">
                         <img src="images/instagram.svg" alt="instagram">
                     </a>
                 </div>
@@ -73,7 +76,7 @@
             </div>
         </div>
 
-        <div class="element-4">
+        <div class="footer__element4">
             <p class="element" id="element-d">©2024 By Jenovic MBINGAZO</p>
         </div>
 

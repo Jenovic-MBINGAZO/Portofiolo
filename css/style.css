@@ -1,3 +1,4 @@
+/*-----------------Principal property --------------------*/
 body{
     background-color: white;
     margin: 0;
@@ -6,10 +7,12 @@ body{
     font-family: "Titillium Web" , sans-serif;  
     font-size: 1rem;
 }
+
 p{
     font-size: 1rem;
 }
-/* -- Home page -- */
+
+/* ------------------------ Home page ------------------------ */
 .header{
     width: 100%;
     height: 8%;
@@ -19,25 +22,29 @@ p{
     align-items: center;
     /*box-shadow: black 0px 0 5px;*/
 }
-.header .logo{
+
+.header__logo{
     margin-left: 5rem;
     padding: 1rem;
     font-size: 1.3rem; 
     font-family: "Roboto",sans-serif;
     font-weight: bold;
 }
-.header .logo a{
+
+.header__link--text{
     text-decoration: none;
     color: black;
 }
-.header .nav{
+
+.header__nav{
     width: 20%;
     margin-right: 5rem;
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
  }
- .header .nav a{
+
+ .header__link--property{
 
     text-decoration: none;
     padding-left: 1rem;
@@ -46,20 +53,23 @@ p{
     font-family: "Titillium Web" , sans-serif;  
 
  }
- #accueil{
-  
-    padding-right: 1rem;
-  
- }
- #cv{
+
+.header__link--active:active{
+    color: orange;
+}
+
+ .header__link--border{
     border-right: 1px solid black;
     padding-right: 1rem;
+    padding-left: 1rem;
     /*border-left: 1px solid black;*/
  }
- #projet{
-    border-right: 1px solid black;
-    padding-right: 1rem;
+
+ .header__link--px{
+    padding-left: 1rem;
  }
+
+ /*-----------------   main ---------------------------*/
 .main{
     width: 100%;
     height: 77%;
@@ -67,7 +77,8 @@ p{
     display: flex;
     align-items: center;
 }
-.main .element{
+
+.main__element--property{
     width: 30%;
     height: 80%;
     /*background-color: red;*/
@@ -78,22 +89,24 @@ p{
     justify-content: flex-end;
     padding-right: 3%;
 }
-.main .element img{
+
+.main__element-img{
     width: 65%;
-    height: 60%;
-    border-radius: 100%;
+    height: auto;
     /*box-shadow: 0 0 5px black;*/
     /*border: 1px solid orange;*/
 }
-.element-1 a{
-    text-decoration: none;
-    color: black;
+
+.main__element-img--rounded{
+    border-radius: 100%;
 }
+
 .element-2 a{
     text-decoration: none;
     color: black;
 }
-.main .element-2{
+
+.main__element{
     width: 40%;
     height: 40%;
     /*background-color: yellow;*/
@@ -101,13 +114,14 @@ p{
     flex-direction: column;
     justify-content: center;
 }
-.element-2 .content-1{
+
+.main__element-p{
     width: 100%;
     height: 70%;
     /*background-color: red;*/
 }
 
-#paragraphe{
+.main__text{
     /*background-color: orange;*/
     width: 55%;
     margin: 0;
@@ -117,7 +131,8 @@ p{
     color: black;
     /*text-align: center;*/
 }
-#paragraphe-2{
+
+.main__text--property{
     /*background-color: black;*/
     font-size: 1.5rem;
     font-weight: 400;
@@ -125,54 +140,45 @@ p{
     padding-top: 1rem;
     
 }
-#presentation{
+
+.main__text-p{
     margin: 0;
     width: 55%;
     font-size: 1rem;
     margin-top: 0.5rem;
 }
-.element-2 .content-2{
+
+.main__element--size{
     width: 100%;
     height: 30%;
     /*background-color: red;*/
     display: flex;
 }
-.content-2 .rond-1{
+.main__div--rounded{
     width: 10%;
     height: 90%;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.main__color--orange{
     background-color: orange;
-    margin-right: 1.5rem;
 }
-.content-2 .rond-2{
-    width: 10%;
-    height: 90%;
-    border-radius: 100%;
+.main__color--red{
     background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1.5rem;
+    /*margin-right: 1.5rem;*/
 }
-.content-2 .rond-3{
-    width: 10%;
-    height: 90%;
-    border-radius: 100%;
+.main__color--primary{
     background-color: rgb(97, 97, 231);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.header__link--td{
+    color: white;
+    text-decoration: none;
+}
 
-}
-.content-2 .rond-1 a{
-    color: white;
-}
-.content-2 .rond-2 a{
-    color: white;
-}
-.content-2 .rond-3 a{
-    color: white;
-}
+/*
 .content-2 .rond-1 a,.content-2 .rond-2 a,.content-2 .rond-3 a{
     width: 100%;
     height: 100%;
@@ -182,9 +188,10 @@ p{
     align-items: center;
     text-decoration: none;
     font-weight: bold;
-    /*color: white;*/
+    color: white;
     font-weight: bold;
-}
+}*/
+/*------------- footer -------------------------------*/
 .footer{
     height: 15%;
     width: 74%;
@@ -196,19 +203,19 @@ p{
     /*background-color: red;*/
     border-top: 1px solid rgb(212, 208, 208);
 }
-.footer .element-1{
+.footer__element{
     width: 15%;
     height: 70%;
     /*background-color: yellow;*/
     margin-right: 2%;
 }
-.footer .element-2{
+.footer__element2{
    /*width: 15%;*/
     height: 70%;
     /*background-color: yellow;*/
     margin-right: 2%;
 }
-.footer .element-3{
+.footer__element3{
     width: 30%;
     height: 70%;
     /*background-color: yellow;*/
@@ -218,6 +225,20 @@ p{
  
     height: 70%;
     /*background-color: yellow;*/
+}
+.footer__contact{
+    width: 100%;
+    height: 50%;
+    /*background-color: red;*/
+    margin-top: 0;
+    display: flex;
+    /*justify-content: center;*/
+    gap: 1rem;
+    background-color: red;
+}
+.element-1 a{
+    text-decoration: none;
+    color: black;
 }
 .border{
     width: 70%;
@@ -232,15 +253,7 @@ p{
 .element-3 #element-c{
     text-align: center;
 }
-.bloc-element{
-    width: 100%;
-    height: 50%;
-    /*background-color: red;*/
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
+
 /* --------------------Page cv ----------------------*/
 .main-cv{
     /*background-color: orange;*/
