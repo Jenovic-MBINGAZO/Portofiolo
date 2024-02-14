@@ -52,6 +52,7 @@ p{
     font-size: 1.2rem; 
     color: black;
     font-family: "Titillium Web" , sans-serif;  
+   /*background-color: red;*/
 
  }
 
@@ -64,6 +65,7 @@ p{
     padding-right: 1rem;
     padding-left: 1rem;
     /*border-left: 1px solid black;*/
+   /* background-color: red;*/
  }
 
  .header__link--px{
@@ -206,14 +208,14 @@ p{
 /*------------- footer -------------------------------*/
 .footer{
     height: 15%;
-    width: 74%;
-    margin-left: 13%;
+    width: 80%;
+    margin-left: 10%;
     font-family: "Titillium Web" , sans-serif;  
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*background-color: red;*/
-    /*border-top: 1px solid rgb(212, 208, 208);*/
+    border-top: 1px solid rgb(212, 208, 208);
 }
 .footer__element{
     width: 20%;
@@ -548,6 +550,24 @@ label{
         margin-top: 2rem;
     }
 }
+@media screen and (max-width : 1280px) {
+    /* ----  Main -------*/
+    .main__element{
+        height: 65%;
+        width: 70%;
+    }
+
+    .main__element--property{
+        width: 50%;
+    }
+    .footer{
+        /*background-color: red;*/
+        padding-bottom: 1rem;
+        
+    }
+
+ 
+}
 @media screen and (max-width : 884px) {
     .main{
         flex-direction: column;
@@ -587,6 +607,7 @@ label{
         font-size: 1rem;
         margin-top: 1rem;
         text-align: center;
+        /*background-color: red;*/
     }
     .main__element--size{
         width: 100%;
@@ -647,6 +668,121 @@ label{
         /*background-color: orange;*/
         height:85%;
         /*padding-top: 2rem;*/
+    }
+}
+@media screen and (max-width:428px) {
+    .header{
+        height: 9vh;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 1.7rem;
+        padding-bottom: 1rem;
+        /*background-color: red;*/
+    }
+    .header__logo{
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .header__nav{
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .main{
+        height: 100vh;
+        padding-bottom: 0;
+    }
+    .main__element--property{
+        width: 75%;
+        height: 50%;
+        margin-left: 0%;
+    }
+    .main__element{
+        width: 80%;
+        height: 38%;
+    }
+    .main__element--size{
+        width: 100%;
+        height: 50%;
+    }
+    .footer{
+        height: 40vh;   
+    }
+
+  
+}
+@media screen and (max-width: 414px) {
+    .main__element{
+        width: 80%;
+        height: 37%;
+    }
+    .main__element--size{
+        width: 100%;
+        height: 50%;
+    }
+    
+}
+@media screen and (max-width: 390px) {
+    .main__element{
+        width: 80%;
+        height: 39%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .header{
+        padding-top: 1.9rem;
+    }
+    .main__element{
+        width: 100%;
+        height: 42%;
+    }
+    .main__element--size{
+        width: 100%;
+        height: 50%;
+    }
+    .main__text-p{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header{
+        padding-top: 2.5rem;
+        /*background-color: red;*/
+    }
+    .main{
+        /*background-color: orange;*/
+        height: 100vh;
+        padding-bottom: 3rem;
+    }
+    .main__element{
+        width: 90%;
+        height: 100vh;
+        /*background-color: green;*/
+    }
+    .main__element--size{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .footer{
+        height: 60vh;   
+    }
+}
+@media screen and (max-width :162px) {
+    .header{
+        height: 9vh;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 1.7rem;
+        padding-bottom: 1rem;
+        background-color: red;
     }
 }
 
