@@ -3,3 +3,4 @@
 2. commit : fintion refactorisation index and css
 3. commit : responsive page index
 4. commit : finish responsive page index
+5. commit : refactorisation cv and responsive page
