@@ -4,3 +4,4 @@
 3. commit : responsive page index
 4. commit : finish responsive page index
 5. commit : refactorisation cv and responsive page
+6. commit : refactorisation projet and responsive device tablette

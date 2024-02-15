@@ -511,7 +511,7 @@ label{
     color: black;
 }
 /* --- Page projets --- */
-.main-projet{
+.bloc{
     display: flex;
     width:70%;
     height: 80vh;
@@ -520,17 +520,16 @@ label{
     /*background-color: saddlebrown;*/
     margin-left: 15%;
 }
-#projet-1{
+.bloc__element{
     display: flex;
     width: 100%;
-   
 }
-#projet-1 #elementaa{
+.element__bloc{
     width: 50%;
     height: 30vh;
     /*background-color: yellow;*/
 }
-#projet-1 #elementbb{
+.element__bloc--size{
     width: 40%;
     height: 30vh;
     background-color: rgb(224, 225, 224);
@@ -538,16 +537,15 @@ label{
     padding-bottom: 1rem;
   
 }
-#projet-2{
-    display: flex;
-    width: 100%;
+.bloc__element--mt{
     margin-top: 2%;
 }
+/*
 #projet-2 #elementa{
     width: 50%;
     height: 30vh;
-    /*background-color:white;*/
-}
+ 
+}*/
 #projet-2 #elementb{
     width: 40%;
     height: 30vh;
@@ -556,10 +554,11 @@ label{
     padding-bottom: 1rem;
     
 }
-.groupe-texte{
+.bloc__text{
     width: 50%;
+    /*background-color: red;*/
 }
-.projet-img{
+.bloc__img{
     width: 90%;
     height: 100%;
     margin-left: 5%;
@@ -615,6 +614,53 @@ label{
         padding-right: 1.7rem;
         /*background-color: red;*/
     }
+    .bloc{
+        display: flex;
+        width:86%;
+        height: 90vh;
+        /*background-color: red;*/
+        flex-direction: column;
+        /*background-color: saddlebrown;*/
+        /*margin-left: 15%;*/
+        /*background-color: red;*/
+        margin-left: 7%;
+    }
+    .bloc__text{
+        width: 90%;
+       /* background-color: yellow;*/
+    }
+    .header__logo--padding{
+        /*background-color: red;*/
+        padding-left: 0rem;
+        margin-right: 5rem;
+    }
+    /*
+    .header--display{
+        justify-content: ;
+        background-color: red;
+    }*/
+    .bloc__img{
+        width: 90%;
+        height: 100%;
+        /*margin-left: 5%;*/
+    }
+    .element__bloc--size{
+        width: 40%;
+        height: 30vh;
+        background-color: rgb(224, 225, 224);
+        padding-top: 1em;
+        padding-bottom: 1rem;
+        margin-left: 5rem;
+    }
+    .bloc__title{
+        font-size: 1.4rem;
+        /*background-color: red;*/
+    }
+    .element__title{
+        font-size: 1rem;
+       /* background-color: red;*/
+    }
+   
 }
 @media screen and (max-width : 884px) {
     .main{
@@ -697,8 +743,6 @@ label{
         justify-content: center;
         /*background-color: red;*/
     }
-}
-@media screen and (max-width : 834px) {
     .main{
         flex-direction: column;
         /*background-color: orange;*/
@@ -713,6 +757,47 @@ label{
         padding-right: 0rem;
         /*background-color: red;*/
     }
+
+    .bloc{
+        /*display: flex;*/
+        width:80%;
+        height: 65vh;
+        /*background-color: red;*/
+        /*flex-direction: column;*/
+        /*background-color: saddlebrown;*/
+        /*margin-left: 15%;*/
+        /*background-color: red;*/
+        margin-left: 10%;
+    }
+    .bloc__text{
+        width: 100%;
+       /* background-color: yellow;*/
+    }
+    .header__logo--padding{
+        /*background-color: red;*/
+        padding-left: 0rem;
+        margin-right: 5rem;
+    }
+    /*
+    .header--display{
+        justify-content: ;
+        background-color: red;
+    }*/
+    .bloc__img{
+        width: 90%;
+        height: 100%;
+        /*margin-left: 5%;*/
+    }
+    .element__bloc--size{
+        width: 40%;
+        height: 15vh;
+        background-color: rgb(224, 225, 224);
+        padding-top: 1em;
+        padding-bottom: 1rem;
+        margin-left: 10rem;
+        margin-top: 2rem;
+    }
+    
 }
 @media screen and (max-width: 800px) {
     .main{
@@ -729,6 +814,45 @@ label{
         padding-right: 0rem;
         /*background-color: red;*/
     }
+    .bloc{
+        /*display: flex;*/
+        width:80%;
+        height: 65vh;
+        /*background-color: red;*/
+        /*flex-direction: column;*/
+        /*background-color: saddlebrown;*/
+        /*margin-left: 15%;*/
+        /*background-color: red;*/
+        margin-left: 10%;
+    }
+    .bloc__text{
+        width: 100%;
+       /* background-color: yellow;*/
+    }
+    .header__logo--padding{
+        /*background-color: red;*/
+        padding-left: 0rem;
+        margin-right: 5rem;
+    }
+    /*
+    .header--display{
+        justify-content: ;
+        background-color: red;
+    }*/
+    .bloc__img{
+        width: 90%;
+        height: 100%;
+        /*margin-left: 5%;*/
+    }
+    .element__bloc--size{
+        width: 40%;
+        height: 15vh;
+        background-color: rgb(224, 225, 224);
+        padding-top: 1em;
+        padding-bottom: 1rem;
+        margin-left: 10rem;
+        margin-top: 2rem;
+    }
 }
 @media screen and (max-width: 768px) {
     .main{
@@ -744,6 +868,10 @@ label{
     .header__nav--p{
         padding-right: 0rem;
         /*background-color: red;*/
+    }
+
+    .bloc{
+        height: 75vh;
     }
 }
 @media screen and (max-width:428px) {
@@ -806,6 +934,45 @@ label{
         height: 40vh;   
         /*background-color: red;*/
         margin-top: 2rem;
+    }
+
+    .bloc{
+        width:100%;
+        height: 100vh;
+        margin-left: 0;
+        /*background-color: yellow;*/
+        padding-bottom: 23rem;
+    }
+    .bloc__element{
+        flex-direction: column;
+        width: 100%;
+        /*background-color: yellow;*/
+    }
+    .bloc__img{
+        width: 90%;
+        height: 100%;
+        /*margin-left: 5%;*/
+    }
+    .element__bloc--size{
+        width: 90%;
+        height: 30vh;
+        background-color: rgb(224, 225, 224);
+        padding-top: 1em;
+        padding-bottom: 1rem;
+        margin-left: 5%;
+    }
+    .bloc__text{
+        width: 100%;
+       /*background-color: green;*/
+    }
+    .element__bloc{
+        width: 90%;
+        height: 30vh;
+        /*background-color: violet;*/
+        margin-left: 5%;
+    }
+    .bloc__title{
+        text-align: center;
     }
 
   
