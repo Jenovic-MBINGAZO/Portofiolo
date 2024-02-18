@@ -6,75 +6,79 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <p class="logo">
-            <a href="index.html">Jenovic MBINGAZO</a>
+
+   <header class="header">
+        <p class="header__logo ">
+            <a href="index.html" class="header__link--text header__link--align">Jenovic.</a>
         </p>
-        <nav class="nav">
-            <a href="cv.html" id="cv">CV</a>
-            <a href="projet.html" id="projet">Projets</a>
-            <a href="contact.html">Contact</a>
+        <nav class="header__nav">
+            <a href="cv.html"  class="header__link--text header__link-property header__link--border header__link--hover header__link--active">CV</a>
+            <a href="projet.html"  class="header__link--text header__link--border  header__link--hover header__link--active">Projets</a>
+            <a href="contact.html" class="header__link--text header__link--px  header__link--active">Contact</a>
         </nav>
     </header>
+
     <main class="main">
-        <div class="element">
-            <img src="images/PP_USA.jpg" alt="Image jenovic">
+        <div class="main__element--property">
+            <img src="images/PP_USA.jpg" alt="Image jenovic" class="main__element-img main__element-img--rounded main__img--opacity">
         </div>
-        <div class="element-2">
-            <div class="content-1">
-                <p id="paragraphe">Hello !</p>
-                <p id="paragraphe-2">A propos de moi</p>
-                <p id="presentation">Je suis <strong>Jenovic MBINGAZO</strong>, un développeur web passionné doté d'une créativité et  d'un talent pour concrétiser des idées  en expériences numériques interactives. </p>
+        <div class="main__element">
+           <div class="main__element-p">
+                <p class="main__text">Hello !</p>
+                <p class="main__text-p"><strong class="main__strong--bloc">Je suis Jenovic MBINGAZO</strong>Un développeur web passionné doté d'une créativité et  d'un talent pour concrétiser des idées  en expériences numériques interactives. </p>
             </div>
-            <div class="content-2">
-                <div class="rond-1"> <a href="cv.html">CV</a></div>
-                <div class="rond-2"><a href="projet.html">Projet</a></div>
-                <div class="rond-3"><a href="contact.html">Contacct</a></div>
+            <div class="main__element--size">
+                <div class="main__div--rounded main__color--orange main__div--opacity"> <a href="cv.html" class="header__link--td main__link--size">CV</a></div>
+                <div class="main__div--rounded main__color--red main__div--opacity"><a href="projet.html" class="header__link--td main__link--size">Projet</a></div>
+                <div class="main__div--rounded main__color--primary main__div--opacity"><a href="contact.html" class="header__link--td main__link--size">Contacct</a></div>
             </div>
         </div>
     </main>
+
+     
+    
     <footer class="footer">
        
-        <div class="element-1">
-            <p class="element" id="element-a">Télephone</p>
-            <a href="tel:+243811728617" class="element" target="_blank">+ 243 811 728 617</a>
+        <div class="footer__element">
+            <p class="element element--padding">Télephone</p>
+            <a href="tel:+243811728617" class="footer__link--decoration" target="_blank">+ 243 811 728 617</a>
         </div>
 
-        <div class="element-2">
-            <p class="element" id="element-b">Email</p>
-            <a href="mailto:djodjombingazo951@gmail.com" target="_blank">djodjombingazo951@gmail.com</a>
+        <div class="footer__element">
+            <p class="element element--padding">Email</p>
+            <a href="mailto:djodjombingazo951@gmail.com" target="_blank" class="footer__link--decoration">djodjombingazo951@gmail.com</a>
         </div>
 
-        <div class="element-3">
-            <p class="element" id="element-c">Suivez-moi</p>
-            <div class="bloc-element">
-                <div class="element-x1">
-                    <a href="https://www.instagram.com/jenovicnzengu/" target="_blank">
-                        <img src="images/instagram.svg" alt="instagram">
+        <div class="footer__element footer__element--padding">
+            <p class="element element--padding element__paddint--top">Suivez-moi</p>
+            <div class="footer__contact">
+                <div class="footer__container">
+                    <a href="https://www.instagram.com/jenovicnzengu/" target="_blank" class="footer__element--td">
+                        <img src="images/instagram.svg" alt="instagram" class="footer__contact--hover">
                     </a>
                 </div>
-                <div class="element-2">
+                <div class="footer__container">
                     <a href="https://www.linkedin.com/in/jenovic-mbingazo-nzengu-0454952b0/" target="_blank">
-                        <img src="images/linkedin.svg" alt="linkedin">
+                        <img src="images/linkedin.svg" alt="linkedin" class="footer__contact--hover">
                     </a>
                 </div>
-                <div class="element-x">
-                    <a href="https://twitter.com/JenovicMBINGAZO" target="_blank">
+                <div class="footer__container">
+                    <a href="https://twitter.com/JenovicMBINGAZO" target="_blank" class="footer__contact--hover">
                         <img src="images/twitter.svg" alt="twitter">
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="element-4">
-            <p class="element" id="element-d">©2024 By Jenovic MBINGAZO</p>
+        <div class="footer__element">
+            <p class="element element--padding">©2024 By Jenovic MBINGAZO</p>
         </div>
 
     </footer>

@@ -1,0 +1,9 @@
+/*------- Historisation the modification ------*/
+1. Commit : refactorisation the my code index
+2. commit : fintion refactorisation index and css
+3. commit : responsive page index
+4. commit : finish responsive page index
+5. commit : refactorisation cv and responsive page
+6. commit : refactorisation projet and responsive device tablette
+7. commit : finish refactor the page index and finish responsive all device page index
+8. commit : responsive page project

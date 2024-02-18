@@ -12,71 +12,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <header class="header">
-        <p class="logo">
-            <a href="index.html">Jenovic MBINGAZO</a>
+        <p class="header__logo ">
+            <a href="index.html" class="header__link--text header__link--align">Jenovic.</a>
         </p>
-        <nav class="nav">
-            <a href="cv.html" id="cv">CV</a>
-            <a href="projet.html" id="projet">Projets</a>
-            <a href="contact.html">Contact</a>
+        <nav class="header__nav">
+            <a href="cv.html"  class="header__link--text header__link-property header__link--border header__link--hover header__link--active">CV</a>
+            <a href="projet.html"  class="header__link--text header__link--border  header__link--hover header__link--active">Projets</a>
+            <a href="contact.html" class="header__link--text header__link--px  header__link--active">Contact</a>
         </nav>
     </header>
-    <main class="main-projet">
-        <h1>Projets</h1>
-        <div id="projet-1">
-            <div id="elementaa">
-                <h2>Docteur Norman</h2>
-                <p class="groupe-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit.it amet consectetur it amet consectetur adipisicing elit.adipisicing elit. Qui numquam dolorem voluptates quaerat. Dignissimos, tempore? Autem, quis consequatur, ratione assumenda qui modi obcaecati earum tempora beatae, excepturi veritatis expedita aliquid.</p>
+    <main class="contenue">
+        <h2 class="element__title">Docteur Norman</h2>
+        <div class="contenue__element">
+            <div class="element__bloc element__margin">
+                <p class="contenue__text">Lorem ipsum Lorem sitadipisicingctetur  Qui numquam dolorem voluptates quaerat. Dignissimos, tempore? Autem, quis consequatur, ratione assumenda qui modi obcaecati earum tempora beatae, excepturi veritatis expedita aliquid.</p>
             </div>
-            <div id="elementbb">
-                <img class="projet-img" src="images/portofiolo.png" alt="Docteur Norman">
+            <div class="element__blocc">
+                <img class="bloc__img" src="images/j.png" alt="Docteur Norman">
             </div>
         </div>
-        <div id="projet-2">
-            <div id="elementa">
-                <h2>Portofiolo</h2>
-                <p class="groupe-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit.it amet consectetur it amet consectetur adipisicing elit.adipisicing elit. Qui numquam dolorem voluptates quaerat. Dignissimos, tempore? Autem, quis consequatur, ratione assumenda qui modi obcaecati earum tempora beatae, excepturi veritatis expedita aliquid.</p>
+        <h2 class="element__title contenue__mt">Portofiolo</h2>
+        <div class="contenue__element">
+            <div class="element__bloc element__margin">
+                <p class="contenue__text">Lorem ipsum elitd  sit amet consectetur  elit.adipisicing elit. Qui numquam dolorem voluptates quaerat. Dignissimos, tempore? Autem, quis consequatur, ratione assumenda qui modi obcaecati earum tempora beatae, excepturi veritatis expedita aliquid.</p>
             </div>
-            <div id="elementb">
-                <img class="projet-img"  src="images/Docteur.png" alt="Portofiolo Jenovic">
+            <div class="element__blocc">
+                <img class="bloc__img" src="images/Docteur.png" alt="Docteur Norman">
             </div>
         </div>
     </main>
     <footer class="footer">
        
-        <div class="element-1">
-            <p class="element" id="element-a">Télephone</p>
-            <a href="tel:+243811728617" class="element" target="_blank">+ 243 811 728 617</a>
+        <div class="footer__element">
+            <p class="element element--padding">Télephone</p>
+            <a href="tel:+243811728617" class="footer__link--decoration" target="_blank">+ 243 811 728 617</a>
         </div>
-        <div class="element-2">
-            <p class="element" id="element-b">Email</p>
-            <a href="mailto:djodjombingazo951@gmail.com" target="_blank">djodjombingazo951@gmail.com</a>
+
+        <div class="footer__element">
+            <p class="element element--padding">Email</p>
+            <a href="mailto:djodjombingazo951@gmail.com" target="_blank" class="footer__link--decoration">djodjombingazo951@gmail.com</a>
         </div>
-        <div class="element-3">
-            <p class="element" id="element-c">Suivez-moi</p>
-            <div class="bloc-element">
-                <div class="element-x1">
-                    <a href="https://www.instagram.com/jenovicnzengu/" target="_blank">
-                        <img src="images/instagram.svg" alt="instagram">
+
+        <div class="footer__element footer__element--padding">
+            <p class="element element--padding element__paddint--top">Suivez-moi</p>
+            <div class="footer__contact">
+                <div class="footer__container">
+                    <a href="https://www.instagram.com/jenovicnzengu/" target="_blank" class="footer__element--td">
+                        <img src="images/instagram.svg" alt="instagram" class="footer__contact--hover">
                     </a>
                 </div>
-                <div class="element-2">
+                <div class="footer__container">
                     <a href="https://www.linkedin.com/in/jenovic-mbingazo-nzengu-0454952b0/" target="_blank">
-                        <img src="images/linkedin.svg" alt="linkedin">
+                        <img src="images/linkedin.svg" alt="linkedin" class="footer__contact--hover">
                     </a>
                 </div>
-                <div class="element-x">
-                    <a href="https://twitter.com/JenovicMBINGAZO" target="_blank">
+                <div class="footer__container">
+                    <a href="https://twitter.com/JenovicMBINGAZO" target="_blank" class="footer__contact--hover">
                         <img src="images/twitter.svg" alt="twitter">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="element-4">
-            <p class="element" id="element-d">©2024 By Jenovic MBINGAZO</p>
+
+        <div class="footer__element">
+            <p class="element element--padding">©2024 By Jenovic MBINGAZO</p>
         </div>
+
     </footer>
+
 </body>
 </html>
