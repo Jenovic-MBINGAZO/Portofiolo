@@ -19,7 +19,7 @@ p{
 .header{
     width: 100%;
     height: 15%;
-    background-color: white;
+    /*background-color: yellow;*/
     display: flex;
     /*justify-content: space-between;*/
     align-items: center;
@@ -76,10 +76,11 @@ p{
    /*background-color: red;*/
 
  }
-
-.header__link--active:active{
+/*
+.header__link--active:visited{
     color: orange;
-}
+    background-color: orange;
+}*/ 
 
  .header__link--border{
     border-right: 1px solid black;
@@ -123,6 +124,8 @@ p{
 }
 .main__element-img--rounded{
     border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0 0 12px black;
 }
 
 .element-2 a{
@@ -215,14 +218,14 @@ p{
 }
 
 .main__color--orange{
-    background-color: orange;
+    background-color: #FFA600;
 }
 .main__color--red{
-    background-color: red;
+    background-color: #E42B2B;
     /*margin-right: 1.5rem;*/
 }
 .main__color--primary{
-    background-color: rgb(97, 97, 231);
+    background-color: #2CCAC0;
 }
 .main__div--opacity:hover{
     opacity: 0.5;
@@ -309,6 +312,7 @@ p{
     width: 80%;
     margin-left: 10%;
     padding-bottom: 3rem;
+    margin-top: 0;
 }
 .header__logo--p{
     /*background-color: red;*/
@@ -326,10 +330,26 @@ p{
     
 }
 .container__title{
-    margin-top: 5rem;
-    padding-bottom: 1.5rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
     /*color: red;*/
     /*background-color: blue;*/
+}
+.container__section{
+    /*background-color: red;*/
+    padding-bottom: 1.5rem;
+}
+/*
+#profil p{
+    margin: 0;
+    margin-top: 3rem;
+    background-color: greenyellow;
+    margin-bottom: 3rem;
+}*/
+.section__section--m{
+    margin: 0;
+    margin-top: 1.5rem;
+    /*color: red;*/
 }
 .container__section{
     /*background-color: red;*/
@@ -347,13 +367,13 @@ p{
     /*color: red;*/
 }
 .container__section--p{
-   padding-bottom: 3rem;
-   margin: 0;
-   margin-top: 1rem;
-}
-.section__title--m{
+    padding-bottom: 3rem;
     margin: 0;
-    margin-top: 3rem;
+    margin-top: 1rem;
+ }
+ .section__title--m{
+    margin: 0;
+    margin-top: 1rem;
     /*color: red;*/
 }
 /*
@@ -373,6 +393,9 @@ p{
     padding-left: 1rem;
     font-size: 1rem;
     /*background-color: red;*/
+}
+hr{
+    border-color:rgb(223, 216, 216);
 }
 /*
 #ecole{
@@ -535,73 +558,81 @@ label{
     color: black;
 }
 /* --- Page projets --- */
-.bloc{
-    display: flex;
-    width:70%;
-    height: 80vh;
+.contenue{
+    width: 90%;
+    height: 70%;
     /*background-color: red;*/
-    flex-direction: column;
-    /*background-color: saddlebrown;*/
-    margin-left: 15%;
+    margin-left: 5%;
+    padding-bottom: 25rem;
 }
-.bloc__element{
-    display: flex;
+.contenue__element{
     width: 100%;
+    /*background-color: yellow;*/
+    display: flex;
 }
 .element__bloc{
     width: 50%;
-    height: 30vh;
-    /*background-color: yellow;*/
+    /*background-color: green;*/
 }
-.element__bloc--size{
+.element__blocc{
     width: 40%;
-    height: 30vh;
     background-color: rgb(224, 225, 224);
-    padding-top: 1em;
-    padding-bottom: 1rem;
-  
+    margin-left: 10%;
 }
-.bloc__element--mt{
-    margin-top: 2%;
-}
-/*
-#projet-2 #elementa{
-    width: 50%;
-    height: 30vh;
- 
-}*/
-#projet-2 #elementb{
-    width: 40%;
-    height: 30vh;
-    background-color: rgb(224, 225, 224);
-    padding-top: 1em;
-    padding-bottom: 1rem;
-    
-}
-.bloc__text{
-    width: 50%;
-    /*background-color: red;*/
+.contenue__mt{
+    margin-top: 2rem;
 }
 .bloc__img{
+    height: 90%;
     width: 90%;
-    height: 100%;
     margin-left: 5%;
-  
+    margin-top: 2.5%;
+    /*padding:;*/
 }
 /* ------------- responsive --------- */
 @media screen and (max-width : 1366px) {
     /* ----  Main -------*/
+    .main{
+        padding: 5rem 0;
+        height: 45%;
+        /*background-color: red;*/
+    }
     .main__element-img{
-        width: 100%;
+        width: 85%;
     }
     .main__element{
-        height: 70%;
+        height: 40%;
         /*background-color: red;*/
+        padding-bottom: 4rem;
     }
     .main__div--rounded{
         /*background-color: red;*/
         margin-top: 2rem;
     }
+    .main__element--size{
+        width: 100%;
+        /*height: 100vh;*/
+        /*background-color: gray;*/
+        display: flex;
+        /*margin-bottom: ;*/
+        /*background-color: red;*/
+        margin-top: 6rem;
+    }
+    .footer{
+        width: 90%;
+        margin-left: 5%;
+        padding: 1.5rem 0;
+    }
+    .footer__element{
+        width: 25%;
+        height: 70%;
+        /*background-color: yellow;*/
+        margin-right: 2%;
+    }
+    .footer__element--padding{
+        padding-left: 2rem;
+    }
+   
 }
 @media screen and (max-width : 1280px) {
     /* ----  Main -------*/
@@ -618,8 +649,6 @@ label{
         padding-bottom: 1rem;
         
     }
-
- 
 }
 @media screen and (max-width: 1114px) {
     .main__div--rounded{
@@ -635,30 +664,31 @@ label{
         padding-right: 1.7rem;
         /*background-color: red;*/
     }
+    /*
     .bloc{
         display: flex;
         width:86%;
         height: 90vh;
         /*background-color: red;*/
-        flex-direction: column;
+       /* flex-direction: column;
         /*background-color: saddlebrown;*/
         /*margin-left: 15%;*/
-        /*background-color: red;*/
+        /*background-color: red;
         margin-left: 7%;
     }
     .bloc__text{
         width: 90%;
-       /* background-color: yellow;*/
+       background-color: yellow;
     }
-    /*
+    
     .header--display{
         justify-content: ;
         background-color: red;
-    }*/
+    }
     .bloc__img{
         width: 90%;
         height: 100%;
-        /*margin-left: 5%;*/
+        margin-left: 5%;
     }
     .element__bloc--size{
         width: 40%;
@@ -670,11 +700,15 @@ label{
     }
     .bloc__title{
         font-size: 1.4rem;
-        /*background-color: red;*/
+        background-color: red;
     }
     .element__title{
         font-size: 1rem;
-       /* background-color: red;*/
+       background-color: red;
+    }*/
+       /* --- Page projets --- */
+       .contenue{
+        padding-bottom: 20rem;
     }
    
 }
@@ -682,14 +716,15 @@ label{
     .header{
         width: 100%;
         height: 6%;
-        /*background-color: yellow;*/
+        /*background-color: red;*/
+        padding: 1rem 0;
     }
     .main{
         flex-direction: column;
         /*background-color: orange;*/
-        height:55%;
+        /*height:5%;*/
         padding-top: 2rem;
-        padding-bottom: 0rem;
+        padding-bottom: 15rem;
         width: 100%;
     }
     .main__element--property{
@@ -713,6 +748,7 @@ label{
         /*background-color: aqua;*/
         /*padding-bottom: 3rem;-----*/
         padding-top: 1rem;
+        margin-top: 1.5rem;
     }
     .main__text{
         /*background-color: orange;*/
@@ -809,17 +845,97 @@ label{
         padding-right: 0rem;
         /*background-color: red;*/
     }
-
-    .bloc{
-        /*display: flex;*/
-        width:80%;
-        height: 65vh;
-        /*background-color: red;*/
-        /*flex-direction: column;*/
-        /*background-color: saddlebrown;*/
-        /*margin-left: 15%;*/
-        /*background-color: red;*/
+    /* projet */
+    .container{
+        /*background-color: orange;*/
+        width: 80%;
         margin-left: 10%;
+        padding-bottom: 3rem;
+        margin-top: 0;
+    }
+    .header__logo--p{
+        /*background-color: red;*/
+        padding-left:8.6rem;
+    }
+    .header__nav--p{
+        padding-right: 8.6rem;
+        /*background-color: red;*/
+    }
+    .main-cv p{
+        font-size: 1.2rem;
+    }
+    .main-cv h1{
+        font-family: "Roboto",sans-serif;
+        
+    }
+    .container__title{
+        margin-top: 0.3rem;
+        padding-bottom: 1rem;
+        /*color: red;*/
+        /*background-color: blue;*/
+    }
+    .container__section{
+        /*background-color: red;*/
+        padding-bottom: 1.5rem;
+    }
+    /*
+    #profil p{
+        margin: 0;
+        margin-top: 3rem;
+        background-color: greenyellow;
+        margin-bottom: 3rem;
+    }*/
+    .section__section--m{
+        margin: 0;
+        margin-top: 1.5rem;
+        /*color: red;*/
+        /*background-color: green;*/
+    }
+    .container__section{
+        /*background-color: red;*/
+        padding-bottom: 1.5rem;
+    }/*
+    #profil p{
+        margin: 0;
+        margin-top: 3rem;
+        background-color: greenyellow;
+        margin-bottom: 3rem;
+    }*/
+    .section__section--m{
+        margin: 0;
+        margin-top: 1.5rem;
+        /*color: red;*/
+        /*background-color: #E42B2B;*/
+    }
+    .container__section--p{
+        padding-bottom: 3rem;
+        margin: 0;
+        margin-top: 1rem;
+        /*background-color: red;*/
+     }
+     .section__title--m{
+        margin: 0;
+        margin-top: 0.2rem;
+        /*background-color: yellow;*/
+        /*color: red;*/
+    }
+    /*
+    .container__section p{
+        margin: 0;
+        margin-top: 1rem;
+        color: red;
+    }
+    #education h1{
+        margin: 0;
+        margin-top: 3rem;
+    }*/
+    .section__ul{
+        margin: 0;
+        margin-top: 1rem;
+        /*background-color: white;*/
+        padding-left: 1rem;
+        font-size: 1rem;
+        /*background-color: red;*/
     }
     .bloc__text{
         width: 100%;
@@ -830,25 +946,119 @@ label{
         justify-content: ;
         background-color: red;
     }*/
+    /*
     .bloc__img{
         width: 90%;
         height: 100%;
-        /*margin-left: 5%;*/
+        /*margin-left: 5%;
     }
     .element__bloc--size{
         width: 40%;
         height: 15vh;
         background-color: rgb(224, 225, 224);
         padding-top: 1em;
-        /*padding-bottom: 1rem;*/
+        /*padding-bottom: 1rem;
         margin-left: 10rem;
         margin-top: 2rem;
     }
+       .container{
+        background-color: red;
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 0.5rem;
+    }*/
+
+    /* --- Page projets --- */
+    .contenue{
+        padding-bottom: 22rem;
+        /*background-color: yellow;*/
+    }
+    .element__blocc{
+        width: 55%;
+        background-color: rgb(224, 225, 224);
+        margin-left: 5%;
+    }
+    .element__bloc{
+        width: 40%;
+        /*background-color: green;*/
+    }
   
 }
-@media screen and (max-width : 850px) {
-        .main{
-        height:65%;
+@media screen and (max-width: 865px) {
+      /* --- Page projets --- */
+      .contenue{
+        padding-bottom: 6rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    /* --- Page projets --- */
+    .contenue{
+      padding-bottom: 28rem;
+  }
+}
+
+@media screen and (max-width: 772px) {
+    /* --- Page projets --- */
+    .contenue{
+      padding-bottom: 16rem;
+    }
+}
+  @media screen and (max-width: 729px) {
+    /* --- Page projets --- */
+    .contenue{
+      padding-bottom: 18rem;
+  }
+}
+
+@media screen and (max-width : 640px) {
+    .header{
+        /*background-color: yellow;*/
+        padding: 1rem 0;
+    }
+    .main{
+    /*height:65%;*/
+    /*background-color: red;*/
+    padding-bottom: 10rem;
+}
+.contenue{
+    padding-bottom:15rem;
+}
+.bloc__img{
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 7.5%;
+}
+.element__bloc{
+    width: 50%;
+    height: 40%;
+    /*background-color: green;*/
+}
+
+}
+@media screen and (max-width: 619px) {
+    /* --- Page projets --- */
+    .contenue{
+      padding-bottom: 49rem;
+  }
+  .contenue__element{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.element__blocc{
+    width: 100%;
+    margin-left: 0;
+}
+.element__bloc{
+    width: 100%;
+    /*background-color: green;*/
+    padding-top: 5%;
+}
+
+}
+@media screen and (max-width:540px) {
+    .contenue{
+        padding-bottom: 44em;
     }
 }
 @media screen and (max-width : 499px){
@@ -856,7 +1066,8 @@ label{
         flex-direction: column;
         /*background-color: yellow;*/
         padding-top: 1.5rem;
-        height: 10%;
+        height: 8%;
+        padding-bottom: 3rem;
     }
     .header__logo{
         margin-left: 0;
@@ -922,9 +1133,16 @@ label{
         height: 16vw;
    }
    .footer{
-    height: 25vh;
+    /*height: 12vh;*/
     padding-top: 4rem;
     border-top: 1px solid rgb(153, 150, 150);
+    }
+    /* CV */
+    .container__title{
+       font-size: 1.5rem;
+    }
+    .section__title--m{
+       font-size: 1rem;
     }
 }
 @media screen and (max-width : 320px){
@@ -943,8 +1161,26 @@ label{
         margin-bottom: 0rem;
 
     }
+    .footer{
+        padding-top: 5rem;
+    }
+       /* --- Page projets --- */
+       .contenue{
+        padding-bottom: 35rem;
+    }
+    
 }
 
+@media screen and (max-width : 280px){
+    .footer{
+        width: 100%;
+        margin-left: 0%;        
+    }
+       /* --- Page projets --- */
+       .contenue{
+        padding-bottom: 39rem;
+    }
+}
 
 
 
